@@ -389,7 +389,7 @@ BEGIN {
     require(lib)
   end
 
-  if defined?(Rails)
+  if defined?(Rails) && defined?(Rails::Engine)
 
     class Sekrets
       class Engine < Rails::Engine
